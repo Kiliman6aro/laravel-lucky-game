@@ -23,6 +23,16 @@ final class GameResult
         return $this->status;
     }
 
+    public function isWin(): bool
+    {
+        return $this->status === 'Win';
+    }
+
+    public function isLose(): bool
+    {
+        return $this->status === 'Lose';
+    }
+
     private function determineStatus(): string
     {
         return ($this->number % 2 === 0) ? 'Win' : 'Lose';

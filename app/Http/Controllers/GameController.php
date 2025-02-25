@@ -49,7 +49,7 @@ class GameController extends Controller
         $userId = Auth::user()->id;
 
         $gameResult = $this->gameService->play();
-        if($gameResult->getStatus() === 'Win'){
+        if($gameResult->isWin()){
             $amountPrize = $this->prizeCalculator->calculate($gameResult);
         }else{
             $amountPrize = 0.00;
