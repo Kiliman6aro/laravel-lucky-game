@@ -15,19 +15,29 @@
 ## Настройка и запуск
 
 Установка зависимостей: 
-```bash composer install```
+```bash 
+composer install
+```
 
 Создание конфигурации
-```bash cp .env.example .env```
+```bash
+ cp .env.example .env
+ ```
 
 Накатить миграции
-```bash php artisan migrate```
+```bash
+ php artisan migrate
+ ```
 
 Запуск приложения
-```bash php artisan serve```
+```bash
+ php artisan serve
+ ```
 
 ## Запуск unit-тестов.
-```bash php artisan test```
+```bash
+ php artisan test
+ ```
 
 
 
