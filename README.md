@@ -24,6 +24,10 @@ composer install
  cp .env.example .env
  ```
 
+Генерация уникального ключа
+```bash
+php artisan key:generate
+```
 Накатить миграции
 ```bash
  php artisan migrate
