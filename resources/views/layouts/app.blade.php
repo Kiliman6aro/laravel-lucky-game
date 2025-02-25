@@ -12,7 +12,7 @@
 <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
         <!-- Логотип или название -->
-        <a href="{{ route('game.play', ['token' => app('auth.token')]) }}" class="text-2xl font-bold tracking-tight hover:text-blue-200 transition-colors">
+        <a href="{{ route('game', ['token' => app('auth.token')]) }}" class="text-2xl font-bold tracking-tight hover:text-blue-200 transition-colors">
             Lucky Game
         </a>
 
