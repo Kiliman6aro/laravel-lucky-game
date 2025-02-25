@@ -14,6 +14,6 @@ Route::middleware('auth:token')->group(function (){
     Route::post('/game/{token}/play', [GameController::class, 'play'])->name('game.play');
     Route::get('/game/{token}/history', [GameController::class, 'history'])->name('game.history');
 
-    Route::post('/token/{token}/create', [TokenController::class, 'refresh'])->name('token.refresh');
+    Route::post('/token/{token}/create', [TokenController::class, 'create'])->name('token.create');
     Route::post('/token/{token}/deactivate', [TokenController::class, 'deactivate'])->name('token.deactivate');
 });
