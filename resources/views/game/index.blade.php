@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Главная')
+@section('title', "I'm Feeling Lucky")
 
 @section('content')
     <div class="text-center">

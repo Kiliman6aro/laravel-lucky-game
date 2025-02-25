@@ -32,7 +32,7 @@
                         type="tel"
                         class="w-full p-2 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 {{ $errors->has('username') ? 'border border-red-400' : 'border border-gray-300' }}"
                     />
-                    @error('phone')
+                    @error('phone_number')
                     <span class="text-red-600 size-1">{{ $message }}</span>
                     @enderror
                 </div>

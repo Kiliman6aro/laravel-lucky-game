@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'История игр')
 @section('content')
     <div class="max-w-5xl mx-auto mt-10">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">🎰 История игр</h2>

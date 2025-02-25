@@ -33,7 +33,7 @@
                 </button>
                 <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-56 bg-white text-gray-800 rounded-lg shadow-xl z-10 border border-gray-100">
                     <!-- Новая ссылка -->
-                    <form action="{{ route('token.refresh', ['token' => app('auth.token')]) }}" method="POST" class="border-b border-gray-100">
+                    <form action="{{ route('token.create', ['token' => app('auth.token')]) }}" method="POST" class="border-b border-gray-100">
                         @csrf
                         <button type="submit" class="block w-full text-left px-4 py-3 text-sm hover:bg-blue-50 hover:text-blue-600 transition-colors cursor-pointer">
                             Новая ссылка
